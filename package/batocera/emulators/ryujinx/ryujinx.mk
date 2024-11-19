@@ -4,13 +4,13 @@
 #
 ################################################################################
 
-RYUJINX_VERSION = r.dc545c3
+RYUJINX_VERSION = 1.2.72
 ifeq ($(BR2_x86_64),y)
 RYUJINX_SOURCE = ryujinx-$(RYUJINX_VERSION)-linux_x64.tar.gz
 else
 RYUJINX_SOURCE = ryujinx-$(RYUJINX_VERSION)-linux_arm64.tar.gz
 endif
-RYUJINX_SITE = https://github.com/ryujinx-mirror/ryujinx/releases/download/$(RYUJINX_VERSION)
+RYUJINX_SITE = https://github.com/GreemDev/Ryujinx/releases/download/$(RYUJINX_VERSION)
 RYUJINX_LICENSE = MIT
 RYUJINX_DEPENDENCIES = sdl2 openal hicolor-icon-theme adwaita-icon-theme librsvg
 
